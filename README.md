@@ -40,6 +40,5 @@ Specifications mentioned here are subject to change by the manufacturer without 
 ## Support
 For any inquiries or support regarding the ASUS Zenfone 4 ZE554KL (Z01KD_1), please refer to the official ASUS website or contact ASUS customer support.
 
-![alt text](4_zu_3_teaser_Asus_Zenfone4)
 
 ```
