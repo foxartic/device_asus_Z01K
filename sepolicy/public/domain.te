@@ -1,0 +1,4 @@
+allow recovery default_prop:property_service { set };
+allow healthd device:chr_file { write open };
+allow init kernel:security { setcheckreqprot };
+allow healthd healthd:capability { mknod };
