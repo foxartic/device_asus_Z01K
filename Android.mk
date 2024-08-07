@@ -5,7 +5,7 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-ifeq ($(TARGET_DEVICE),Z01KD_1)
+ifeq ($(TARGET_DEVICE),Z01K)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 include $(CLEAR_VARS)
 endif

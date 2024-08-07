@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/asus/Z01KD_1
+DEVICE_PATH := device/asus/Z01K
 BOARD_VENDOR := asus
 
 #ROM-HACKS
@@ -27,7 +27,7 @@ TARGET_2ND_CPU_VARIANT := generic
 BOARD_SEPOLICY_VERS=30.0
 
 #BOOTLOADER 
-TARGET_BOOTLOADER_BOARD_NAME := Z01KD_1
+TARGET_BOOTLOADER_BOARD_NAME := Z01K
 TARGET_NO_BOOTLOADER := true
 
 # Boot animation
@@ -81,8 +81,8 @@ BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_BOARD_PLATFORM := sdm630
 
 #SEPOLICY
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 #VINTF
 PRODUCT_ENFORCE_VINTF_MANIFEST=false
--include vendor/asus/Z01KD_1/BoardConfigVendor.mk
+-include vendor/asus/Z01K/BoardConfigVendor.mk
