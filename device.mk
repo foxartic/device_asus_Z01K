@@ -7,7 +7,7 @@
 #API
 PRODUCT_SHIPPING_API_LEVEL= 25
 
-TARGET_PREBUILT_KERNEL := device/asus/Z01K/zImage
+TARGET_PREBUILT_KERNEL := device/asus/Z01K/prebuilt/zImage
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
     
