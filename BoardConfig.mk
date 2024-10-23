@@ -50,7 +50,7 @@ BOARD_TAGS_OFFSET := 0x00000100
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
-TARGET_KERNEL_CONFIG := ze554kl-userdebug-sdm660_defconfig
+TARGET_KERNEL_CONFIG := ze554kl-user-sdm660-pastry_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/Z01K
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8
