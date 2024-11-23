@@ -47,11 +47,9 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00008000
 BOARD_RAMDISK_OFFSET := 0x01000000 
 BOARD_TAGS_OFFSET := 0x00000100
+BOARD_KERNEL := device/asus/Z01K/prebuilt/boot.img
+BOARD_NO_KERNEL := true         # Do not compile a new kernel (since we're using a prebuilt one)
 
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-
-TARGET_KERNEL_CONFIG := ze554kl-user-sdm660-pastry_defconfig
-TARGET_KERNEL_SOURCE := kernel/asus/Z01K
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8
 BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0 androidboot.hardware=qcom
@@ -82,7 +80,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 56465112576
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 
 #PLATFORM
-TARGET_BOARD_PLATFORM := sdm630
+TARGET_BOARD_PLATFORM := sdm660
 
 #SEPOLICY
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
