@@ -49,7 +49,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL := device/asus/Z01K/prebuilt/boot.img
 BOARD_NO_KERNEL := true         # Do not compile a new kernel (since we're using a prebuilt one)
-
+BOARD_KERNEL_IMAGE_NAME := boot.img
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8
 BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0 androidboot.hardware=qcom
