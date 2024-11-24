@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/asus/Z01K
+DEVICE_PATH := device/asus/ASUS_Z01KD_1
 BOARD_VENDOR := asus
 
 #ROM-HACKS
@@ -27,7 +27,7 @@ TARGET_2ND_CPU_VARIANT := generic
 BOARD_SEPOLICY_VERS=30.0
 
 #BOOTLOADER 
-TARGET_BOOTLOADER_BOARD_NAME := Z01K
+TARGET_BOOTLOADER_BOARD_NAME := ASUS_Z01KD_1
 TARGET_NO_BOOTLOADER := true
 
 # Boot animation
@@ -47,7 +47,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00008000
 BOARD_RAMDISK_OFFSET := 0x01000000 
 BOARD_TAGS_OFFSET := 0x00000100
-BOARD_KERNEL := device/asus/Z01K/prebuilt/boot.img
+BOARD_KERNEL := device/asus/ASUS_Z01KD_1/prebuilt/boot.img
 BOARD_NO_KERNEL := true         # Do not compile a new kernel (since we're using a prebuilt one)
 BOARD_KERNEL_IMAGE_NAME := boot.img
 
@@ -87,4 +87,4 @@ TARGET_BOARD_PLATFORM := sdm660
 
 #VINTF
 PRODUCT_ENFORCE_VINTF_MANIFEST=false
--include vendor/asus/Z01K/BoardConfigVendor.mk
+-include vendor/asus/ASUS_Z01KD_1/BoardConfigVendor.mk

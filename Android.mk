@@ -6,7 +6,7 @@
 LOCAL_OVERRIDES_MODULE := true
 
 LOCAL_PATH := $(call my-dir)
-ifeq ($(TARGET_DEVICE),Z01K)
+ifeq ($(TARGET_DEVICE),ASUS_Z01KD_1)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 include $(CLEAR_VARS)
 endif

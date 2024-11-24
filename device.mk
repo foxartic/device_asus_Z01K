@@ -151,4 +151,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
 
 # Inherit vendor
-$(call inherit-product, vendor/asus/Z01K/Z01K-vendor.mk)
+$(call inherit-product, vendor/asus/ASUS_Z01KD_1/ASUS_Z01KD_1-vendor.mk)
