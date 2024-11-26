@@ -10,6 +10,4 @@ ifeq ($(TARGET_DEVICE),ASUS_Z01KD_1)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 include $(CLEAR_VARS)
 endif
-ifneq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+
