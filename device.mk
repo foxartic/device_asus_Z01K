@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
- TARGET_PREBUILT_KERNEL := device/asus/Z01K/prebuilt/zImage
+ TARGET_PREBUILT_KERNEL := device/asus/ASUS_Z01KD_1/prebuilt/zImage
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
    
