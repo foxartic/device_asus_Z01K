@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/asus/ASUS_Z01KD_1
+DEVICE_PATH := device/asus/Z01K
 BOARD_VENDOR := asus
 TARGET_OTA_ASSERT_DEVICE := ASUS_Z01KD,Z01KD,Z01K,ASUS_Z01KD_1
 
@@ -28,7 +28,7 @@ TARGET_2ND_CPU_VARIANT := generic
 BOARD_SEPOLICY_VERS=30.0
 
 #BOOTLOADER 
-TARGET_BOOTLOADER_BOARD_NAME := ASUS_Z01KD_1
+TARGET_BOOTLOADER_BOARD_NAME := Z01K
 TARGET_NO_BOOTLOADER := true
 
 # Boot animation
@@ -48,16 +48,23 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00008000
 BOARD_RAMDISK_OFFSET := 0x01000000 
 BOARD_TAGS_OFFSET := 0x00000100
-BOARD_KERNEL := device/asus/ASUS_Z01KD_1/prebuilt/boot.img
+BOARD_KERNEL := device/asus/Z01K/prebuilt/boot.img
 
 
-BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8
-BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0 androidboot.hardware=qcom
-BOARD_KERNEL_CMDLINE := androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3 
-BOARD_KERNEL_CMDLINE := earlycon=msm_serial_dm,0xc170000 msm_rtb.filter=0x37 ehci-hcd.park=3
-BOARD_KERNEL_CMDLINE := sched_enable_hmp=1 sched_enable_power_aware=1
-BOARD_KERNEL_CMDLINE := lpm_levels.sleep_disabled=1 service_locator.enable=1 swiotlb=1
-BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 \
+ androidboot.console=ttyMSM0 \
+ androidboot.hardware=qcom \
+ androidboot.configfs=true \
+ androidboot.usbcontroller=a800000.dwc3 \
+ earlycon=msm_serial_dm,0xc170000 \
+ msm_rtb.filter=0x37 \
+ ehci-hcd.park=3 \
+ sched_enable_hmp=1 \
+ sched_enable_power_aware=1 \
+ lpm_levels.sleep_disabled=1 \
+ service_locator.enable=1 \
+ swiotlb=1 \
+ androidboot.selinux=permissive
 
 #PARTITION
 # Partitions - Boot
@@ -87,4 +94,4 @@ TARGET_BOARD_PLATFORM := sdm660
 
 #VINTF
 PRODUCT_ENFORCE_VINTF_MANIFEST=false
--include vendor/asus/ASUS_Z01KD_1/BoardConfigVendor.mk
+-include vendor/asus/Z01K/BoardConfigVendor.mk

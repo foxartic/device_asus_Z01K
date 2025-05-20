@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
- TARGET_PREBUILT_KERNEL := device/asus/ASUS_Z01KD_1/prebuilt/zImage
+ TARGET_PREBUILT_KERNEL := device/asus/Z01K/prebuilt/zImage
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
    
@@ -155,4 +155,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
 
 # Inherit vendor
-$(call inherit-product, vendor/asus/ASUS_Z01KD_1/ASUS_Z01KD_1-vendor.mk)
+$(call inherit-product, vendor/asus/Z01K/Z01K-vendor.mk)
